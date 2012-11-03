@@ -1,0 +1,4 @@
+# To use this feature, enable the OC variable in the test and put the following in this file:
+# attachmentid,filename,pageid (that the attachment is on)
+12345,dummy.pdf,12345
+

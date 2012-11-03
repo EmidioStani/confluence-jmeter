@@ -1,7 +1,7 @@
 confluence-jmeter
 =================
 
-The original files are available on Atlassian web site.
+The original files are available on Atlassian [web site](https://confluence.atlassian.com/display/JIRA/Performance+Testing+Scripts).
 
 I updated the script (based on version 4.2.2) fixing some issue and adding new features.
 

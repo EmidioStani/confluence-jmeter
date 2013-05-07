@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.3">
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="2.9 r1437961">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Create Test Data" enabled="true">
       <stringProp name="TestPlan.comments">Setup the users and the pages to be used for load testing.</stringProp>
@@ -201,7 +201,7 @@
           </elementProp>
           <elementProp name="crowdhost" elementType="Argument">
             <stringProp name="Argument.name">crowdhost</stringProp>
-            <stringProp name="Argument.value">${__P(crowd.host,http://192.39.226.93:8095/crowd)}</stringProp>
+            <stringProp name="Argument.value">${__P(crowd.host,http://192.39.116.194/crowd)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -438,7 +438,7 @@
                 </elementProp>
                 <elementProp name="DIRECTORYIDCROWD" elementType="Argument">
                   <stringProp name="Argument.name">DIRECTORYIDCROWD</stringProp>
-                  <stringProp name="Argument.value">753665</stringProp>
+                  <stringProp name="Argument.value">131075</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -617,7 +617,7 @@
                     <elementProp name="applicationPassword" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">applicationPassword</stringProp>
-                      <stringProp name="Argument.value">${adminpassword}</stringProp>
+                      <stringProp name="Argument.value">confluence</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -723,7 +723,7 @@
                     <elementProp name="applicationPassword" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">applicationPassword</stringProp>
-                      <stringProp name="Argument.value">${adminpassword}</stringProp>
+                      <stringProp name="Argument.value">confluence</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -1056,7 +1056,7 @@
                     <elementProp name="applicationPassword" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">applicationPassword</stringProp>
-                      <stringProp name="Argument.value">${adminpassword}</stringProp>
+                      <stringProp name="Argument.value">confluence</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -1162,7 +1162,7 @@
                     <elementProp name="applicationPassword" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">applicationPassword</stringProp>
-                      <stringProp name="Argument.value">${adminpassword}</stringProp>
+                      <stringProp name="Argument.value">confluence</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -1996,7 +1996,7 @@
                 <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">DONE</stringProp>
-                  <stringProp name="RegexExtractor.regex">&lt;div class=&quot;no-results &quot;&gt;\n\s*(.*?)\n\s*&lt;/div&gt;</stringProp>
+                  <stringProp name="RegexExtractor.regex">&lt;div class=&quot;no-results &quot;&gt;\n\s*&lt;div class=&quot;aui-message info&quot;&gt;(.*?)&lt;span class=&quot;aui-icon icon-info&quot;&gt;&lt;/span&gt;&lt;/div&gt;\n\s*&lt;/div&gt;</stringProp>
                   <stringProp name="RegexExtractor.template">$1$</stringProp>
                   <stringProp name="RegexExtractor.default">NONE</stringProp>
                   <stringProp name="RegexExtractor.match_number">1</stringProp>

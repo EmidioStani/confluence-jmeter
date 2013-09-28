@@ -19,5 +19,5 @@ Further I improved the script giving the possibility:
 
 Therefore after you download the script (with the resources) just remember to adapt the Crowd configuration (parameter -Jcrowd.host), that the operation Create User from Crowd expect to have Crowd under the same ip address of Confluence (you can of course change it) and be careful when modifying (from Read Only to Ready Write) the connection to Crowd.
 
-The script has been executed on Confluence 4.3.1 with Jmeter 2.7 and Confluence 5.0.2 with Jmeter 2.9
+The script has been executed on Confluence 4.3.1 with Jmeter 2.7 and Confluence 5.0.2/3 with Jmeter 2.9
 

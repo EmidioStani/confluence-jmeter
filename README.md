@@ -21,3 +21,21 @@ Therefore after you download the script (with the resources) just remember to ad
 
 The script has been executed on Confluence 4.3.1 with Jmeter 2.7 and Confluence 5.0.2/3 with Jmeter 2.9
 
+Setup:
+
+```jmeter.bat -t ..\..\confluence-jmeter-master\jmeter-test-setup.jmx -Jspace.zip=..\..\confluence-jmeter-master\demo-site.zip```
+```-Jadmin.user=ADMINUSER -Jadmin.pass=ADMINPASSWORD -Jconfluence.host=HOSTNAME -Jconfluence.port=443```
+```-Jconfluence.context=/confluence -Jenable.sso=true -Jconfluence.protocol=https```
+
+Execution:
+
+```jmeter.bat -t ..\..\confluence-jmeter-master\jmeter-test-fixedload.jmx -Jadmin.user=ADMINUSER -Jadmin.pass=aDMINPASSWORD```
+```-Jconfluence.host=HOSTNAME -Jconfluence.port=443 -Jconfluence.context=/confluence -Jconfluence.protocol=https```
+
+Deletion:
+
+```jmeter.bat -t ..\..\confluence-jmeter-master\jmeter-test-setup.jmx -Jremove.data=true -Jadmin.user=ADMINUSER```
+```-Jadmin.pass=ADMINPASSWORD -Jconfluence.host=HOSTNAME -Jconfluence.port=443```
+```-Jconfluence.context=/confluence -Jconfluence.protocol=https```
+
+
